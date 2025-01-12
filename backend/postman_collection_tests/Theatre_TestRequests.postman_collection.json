@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "dbdfd8f9-c039-4c3e-aee6-7d22d643c3c3",
+		"name": "Theatre_TestRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33276131"
+	},
+	"item": [
+		{
+			"name": "GET: all theatres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/theatres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"theatres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/theatres/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"theatres",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"CHANGED BY PUT REQUEST\",\r\n    \"address\": \"xd\",\r\n    \"num_rows\": 10,\r\n    \"max_seats_per_row\": 15,\r\n    \"movies\": [\r\n        {\r\n            \"id\": 2,\r\n            \"title\": \"Sonic the Hedgehog 3\",\r\n            \"synopsis\": \"Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. With their abilities outmatched in every way, Team Sonic must seek out an unlikely alliance in hopes of stopping Shadow and protecting the planet.\",\r\n            \"duration\": \"01:49:00\",\r\n            \"ageRating\": \"PG\",\r\n            \"releaseDate\": \"2024-12-20T07:00:00.000+00:00\",\r\n            \"genre\": \"Adventure, Comedy, Family, Science Fiction\",\r\n            \"posterFilePath\": \"sonic_the_hedgehog_three.jpg\",\r\n            \"featured\": true,\r\n            \"showtimes\": [\r\n                {\r\n                    \"id\": 1,\r\n                    \"seats\": [\r\n                        {\r\n                            \"id\": 1,\r\n                            \"seat\": \"A17\"\r\n                        },\r\n                        {\r\n                            \"id\": 2,\r\n                            \"seat\": \"D17\"\r\n                        }\r\n                    ],\r\n                    \"date\": \"2024-11-25T02:30:00.000+00:00\",\r\n                    \"timeString\": \"19:30\",\r\n                    \"dateString\": \"2024-11-24\",\r\n                    \"showingDateTimeString\": \"2024-11-24 19:30:00\"\r\n                },\r\n                {\r\n                    \"id\": 5,\r\n                    \"seats\": [],\r\n                    \"date\": \"2024-12-25T02:30:00.000+00:00\",\r\n                    \"timeString\": \"19:30\",\r\n                    \"dateString\": \"2024-12-24\",\r\n                    \"showingDateTimeString\": \"2024-12-24 19:30:00\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"title\": \"Iron Man 3\",\r\n            \"synopsis\": \"When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.\",\r\n            \"duration\": \"02:10:00\",\r\n            \"ageRating\": \"PG\",\r\n            \"releaseDate\": \"2013-05-03T06:00:00.000+00:00\",\r\n            \"genre\": \"Action, Adventure, Science Fiction\",\r\n            \"posterFilePath\": \"iron_man_three.jpg\",\r\n            \"featured\": true,\r\n            \"showtimes\": []\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"title\": \"Tenet\",\r\n            \"synopsis\": \"Armed with only one word - Tenet - and fighting for the survival of the entire world, the Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.\",\r\n            \"duration\": \"02:30:00\",\r\n            \"ageRating\": \"PG\",\r\n            \"releaseDate\": \"2018-08-27T06:00:00.000+00:00\",\r\n            \"genre\": \"Action, Thriller, Science Fiction\",\r\n            \"posterFilePath\": \"tenet.jpg\",\r\n            \"featured\": true,\r\n            \"showtimes\": [\r\n                {\r\n                    \"id\": 2,\r\n                    \"seats\": [\r\n                        {\r\n                            \"id\": 3,\r\n                            \"seat\": \"E17\"\r\n                        },\r\n                        {\r\n                            \"id\": 4,\r\n                            \"seat\": \"L17\"\r\n                        }\r\n                    ],\r\n                    \"date\": \"2024-12-25T02:30:00.000+00:00\",\r\n                    \"timeString\": \"19:30\",\r\n                    \"dateString\": \"2024-12-24\",\r\n                    \"showingDateTimeString\": \"2024-12-24 19:30:00\"\r\n                },\r\n                {\r\n                    \"id\": 3,\r\n                    \"seats\": [],\r\n                    \"date\": \"2024-12-25T02:30:00.000+00:00\",\r\n                    \"timeString\": \"19:30\",\r\n                    \"dateString\": \"2024-12-24\",\r\n                    \"showingDateTimeString\": \"2024-12-24 19:30:00\"\r\n                },\r\n                {\r\n                    \"id\": 4,\r\n                    \"seats\": [],\r\n                    \"date\": \"2024-12-25T00:17:17.000+00:00\",\r\n                    \"timeString\": \"17:17\",\r\n                    \"dateString\": \"2024-12-24\",\r\n                    \"showingDateTimeString\": \"2024-12-24 17:17:17\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/admin/theatres/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"theatres",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/theatres/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"theatres",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"name\": \"ADDED BY POST REQ\",\r\n    \"address\": \"x\",\r\n    \"num_rows\": 17,\r\n    \"max_seats_per_row\": 17\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/admin/theatres/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"theatres",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1 @@
+click "import" in Postman (see image.png) > Select json file

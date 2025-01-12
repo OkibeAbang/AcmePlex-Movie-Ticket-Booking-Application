@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Movie Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header p {
+            margin: 0;
+            font-size: 14px;
+            color: #666666;
+        }
+        .ticket-details {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .ticket-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333333;
+        }
+        .ticket-details .important {
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888888;
+            margin-top: 20px;
+        }
+        .barcode {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .barcode img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="email-container">
+    <div class="header">
+        <h1>Your Movie Ticket</h1>
+        <h2>Hello, {{userName}}!</h2>
+        <p>Thank you for booking with us!</p>
+    </div>
+    <div class="ticket-details">
+        <p><strong>Ticket ID:</strong> {{ticketId}}</p>
+        <p><strong>State:</strong> {{state}}</p>
+        <p><strong>Theatre:</strong> {{theatreName}}</p>
+        <p><strong>Movie:</strong> {{movieName}}</p>
+        <p><strong>Showtime:</strong> {{showtime}}</p>
+        <p><strong>Seat:</strong> {{seat}}</p>
+    </div>
+    <div class="barcode">
+        <p>Scan the attached QR code at the theatre:</p>
+<!--        <img src="{{qrCodeUrl}}" alt="QR Code">-->
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Movie Ticketing Service. All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>

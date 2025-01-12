@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "d1dc1c01-a528-4086-a02c-c3c191d7abc3",
+		"name": "Showtime_TestRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33276131"
+	},
+	"item": [
+		{
+			"name": "GET: all showtimes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/showtimes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"showtimes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/showtimes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"showtimes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"movie_id\": 2,\r\n    \"seats\": [\r\n        {\r\n            \"id\": 8,\r\n            \"seat\": \"z7\",\r\n            \"isReserved\": true,\r\n            \"showtime_id\": 1\r\n        },\r\n        {\r\n            \"id\": 6,\r\n            \"seat\": \"z7\",\r\n            \"isReserved\": false,\r\n            \"showtime_id\": 1\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"seat\": \"z7\",\r\n            \"isReserved\": false,\r\n            \"showtime_id\": 1\r\n        },\r\n        {\r\n            \"id\": 7,\r\n            \"seat\": \"z7\",\r\n            \"isReserved\": false,\r\n            \"showtime_id\": 1\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"seat\": \"a7\",\r\n            \"isReserved\": true,\r\n            \"showtime_id\": 1\r\n        }\r\n    ],\r\n    \"date\": \"2024-11-25T02:30:00.000+00:00\",\r\n    \"_Date\": \"2024-11-25T02:30:00.000+00:00\",\r\n    \"dateString\": \"2024-11-24\",\r\n    \"timeString\": \"19:30\",\r\n    \"showingDateTimeString\": \"2024-11-24 19:30:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/admin/showtimes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"showtimes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/showtimes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"showtimes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movie_id\": 1,\r\n    \"date\": \"1112-02-02 19:30:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/admin/showtimes/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"showtimes",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
